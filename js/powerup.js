@@ -321,7 +321,7 @@ const powerUps = {
     endDraft(type, isCanceled = false) { //type should be a gun, tech, or field
         if (isCanceled) {
             if (tech.isCancelDuplication) {
-                const value = 0.05
+                const value = 0.50
                 tech.duplication += value
                 tech.maxDuplicationEvent()
                 simulation.makeTextLog(`tech.duplicationChance() <span class='color-symbol'>+=</span> ${value}`)
