@@ -1458,7 +1458,7 @@ const powerUps = {
     },
     randomize(where) { //makes a random power up convert into a random different power up
         //put 10 power ups close together
-        const len = Math.min(10, powerUp.length)
+        const len = Math.min(1, powerUp.length)
         for (let i = 0; i < len; i++) { //collide the first 10 power ups
             const unit = Vector.rotate({ x: 1, y: 0 }, 6.28 * Math.random())
             Matter.Body.setPosition(powerUp[i], Vector.add(where, Vector.mult(unit, 20 + 25 * Math.random())));
