@@ -342,7 +342,6 @@ const powerUps = {
             }
             if (tech.isCancelCouple) powerUps.spawnDelay("coupling", 8)
             if (tech.isCancelTech && tech.cancelTechCount === 0 && type !== "entanglement") {
-                tech.cancelTechCount++
                 // powerUps.research.use('tech')
                 powerUps[type].effect();
                 return
