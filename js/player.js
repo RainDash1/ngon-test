@@ -5596,10 +5596,27 @@ const m = {
                                         if (tech.isBlockPowerUps && !mob[k].alive && mob[k].isDropPowerUp && m.throwCycle > m.cycle) {
                                             let type = tech.isEnergyNoAmmo ? "heal" : "ammo"
                                             if (Math.random() < 0.4) {
-                                                type = "tech"
+                                                type = "heal"
                                             } else if (Math.random() < 0.4 && !tech.isSuperDeterminism) {
-                                                type = "field"
+                                                type = "ammo"
                                             }
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
                                             powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
                                             // for (let i = 0, len = Math.ceil(2 * Math.random()); i < len; i++) {}
                                         }
