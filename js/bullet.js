@@ -2542,7 +2542,7 @@ const b = {
             dmg: 0, // 0.14   //damage done in addition to the damage from momentum
             minDmgSpeed: 2,
             lookFrequency: 67 + Math.floor(7 * Math.random()),
-            drain: 0.7 * tech.laserDrain,
+            drain: 0.7,
             isDetonated: false,
             torqueMagnitude: 0.000003 * (Math.round(Math.random()) ? 1 : -1),
             range: 1500,
