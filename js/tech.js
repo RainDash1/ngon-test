@@ -2331,7 +2331,7 @@ const tech = {
     },
     {
         name: "mass driver",
-        description: "<strong>4x</strong> <strong class='color-block'>block</strong> collision <strong class='color-d'>damage</strong>",
+        description: "<strong>health</strong> determines <strong class='color-block'>block</strong> damage",
         maxCount: 1,
         count: 0,
         frequency: 1,
@@ -2341,7 +2341,7 @@ const tech = {
         },
         requires: "not wormhole, reel, tokamak",
         effect() {
-            tech.blockDamage = 0.3
+            tech.blockDamage = 0.075 * m.health
         },
         remove() {
             tech.blockDamage = 0.075
