@@ -2331,7 +2331,7 @@ const tech = {
     },
     {
         name: "mass driver",
-        description: "<strong>health</strong> determines <strong class='color-block'>block</strong> damage",
+        description: "<strong class='color-h'>health</strong> determines <strong class='color-block'>block</strong> damage",
         maxCount: 1,
         count: 0,
         frequency: 1,
