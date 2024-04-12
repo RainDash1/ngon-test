@@ -2341,7 +2341,7 @@ const tech = {
         },
         requires: "not wormhole, reel, tokamak",
         effect() {
-            tech.blockDamage = 0.075 * m.health
+            tech.blockDamage = 0.075 * m.health / 30
         },
         remove() {
             tech.blockDamage = 0.075
