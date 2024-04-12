@@ -5596,14 +5596,10 @@ const m = {
                                         if (tech.isBlockPowerUps && !mob[k].alive && mob[k].isDropPowerUp && m.throwCycle > m.cycle) {
                                             let type = tech.isEnergyNoAmmo ? "heal" : "ammo"
                                             if (Math.random() < 0.4) {
-                                                type = "heal"
+                                                type = "tech"
                                             } else if (Math.random() < 0.4 && !tech.isSuperDeterminism) {
-                                                type = "research"
+                                                type = "field"
                                             }
-                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
-                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
-                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
-                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
                                             powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
                                             // for (let i = 0, len = Math.ceil(2 * Math.random()); i < len; i++) {}
                                         }
