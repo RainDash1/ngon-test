@@ -878,7 +878,7 @@ const powerUps = {
                 // console.log(options.length)
                 if (options.length > 0 || !tech.isSuperDeterminism) {
                     let totalChoices = Math.min(options.length, (tech.isDeterminism ? 1 : 2 + tech.extraChoices + 2 * (m.fieldMode === 8)))
-                    if (tech.isFlipFlopChoices) totalChoices += tech.isRelay ? (tech.isFlipFlopOn ? -1 : 7) : (tech.isFlipFlopOn ? 7 : -1) //flip the order for relay
+                    if (tech.isFlipFlopChoices) totalChoices += tech.isRelay ? (tech.isFlipFlopOn ? -999 : 999) : (tech.isFlipFlopOn ? 999 : -999) //flip the order for relay
                     function removeOption(index) {
                         for (let i = 0; i < options.length; i++) {
                             if (options[i] === index) {
