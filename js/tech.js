@@ -2542,7 +2542,7 @@ const tech = {
     },
     {
         name: "integrated circuit",
-        description: "if <strong class='color-flop'>ON</strong> <strong>+7</strong> power up <strong>choices</strong><br>if <strong class='color-flop'>OFF</strong> <strong>-1</strong> power up <strong>choices</strong>",
+        description: "if <strong class='color-flop'>ON</strong> <strong>+999</strong> power up <strong>choices</strong><br>if <strong class='color-flop'>OFF</strong> <strong>-999</strong> power up <strong>choices</strong>",
         maxCount: 1,
         count: 0,
         frequency: 3,
