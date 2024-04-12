@@ -5601,6 +5601,10 @@ const m = {
                                                 type = "research"
                                             }
                                             powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
+                                            powerUps.spawn(mob[k].position.x, mob[k].position.y, type);
                                             // for (let i = 0, len = Math.ceil(2 * Math.random()); i < len; i++) {}
                                         }
 
