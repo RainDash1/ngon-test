@@ -261,7 +261,7 @@ const tech = {
             tech.is100Duplicate = false
             const range = 1300
             tech.isScaleMobsWithDuplication = true
-            for (let i = 0, len = 9; i < len; i++) {
+            for (let i = 0, len = 99; i < len; i++) {
                 const angle = 2 * Math.PI * i / len
                 spawn.randomLevelBoss(m.pos.x + range * Math.cos(angle), m.pos.y + range * Math.sin(angle), spawn.nonCollideBossList);
             }
@@ -4474,7 +4474,7 @@ const tech = {
     },
     {
         name: "apomixis",
-        description: `when you reach <strong>100%</strong> <strong class='color-dup'>duplication</strong><br>spawn <strong>11 bosses</strong> with <strong>2x</strong> <strong>durability</strong>`,
+        description: `when you reach <strong>100%</strong> <strong class='color-dup'>duplication</strong><br>spawn <strong>101 bosses</strong> with <strong>2x</strong> <strong>durability</strong>`,
         maxCount: 1,
         count: 0,
         frequency: 2,
