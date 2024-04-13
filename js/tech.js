@@ -4684,7 +4684,7 @@ const tech = {
     {
         name: "paradigm shift",
         descriptionFunction() {
-            return `when <strong>paused</strong> clicking a <strong class='color-m'>tech</strong> <span class='color-remove'>ejects</span> it<br><strong>–4</strong> ${tech.isEnergyHealth ? "<strong class='color-f'>energy</strong>" : "<strong class='color-h'>health</strong>"} each time`
+            return `when <strong>paused</strong> clicking a <strong class='color-m'>tech</strong> <span class='color-remove'>ejects</span> it<br><strong>+5%</strong> <strong class='color-junk'>JUNK</strong><strong class='color-m'>tech</strong> chance each time"} each time`
         },
         maxCount: 1,
         count: 0,
