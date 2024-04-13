@@ -1016,7 +1016,7 @@ const powerUps = {
                 }
                 //set total choices
                 let totalChoices = (tech.isDeterminism ? 1 : 3 + tech.extraChoices + 2 * (m.fieldMode === 8))
-                if (tech.isFlipFlopChoices) totalChoices += tech.isRelay ? (tech.isFlipFlopOn ? -1 : 7) : (tech.isFlipFlopOn ? 7 : -1) //flip the order for relay
+                if (tech.isFlipFlopChoices) totalChoices += tech.isRelay ? (tech.isFlipFlopOn ? -999 : 999) : (tech.isFlipFlopOn ? 999 : -999) //flip the order for relay
                 if (optionLengthNoDuplicates < totalChoices + 1) { //if not enough options for all the choices
                     totalChoices = optionLengthNoDuplicates
                     if (tech.isBanish) { //when you run out of options eject banish
