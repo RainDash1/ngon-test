@@ -7512,7 +7512,7 @@ const tech = {
         name: "specular reflection",
         description: "<strong>+2</strong> <strong class='color-laser'>laser</strong> beam reflections",
         isGunTech: true,
-        maxCount: Infinity,
+        maxCount: 10000,
         count: 0,
         frequency: 3,
         frequencyDefault: 1,
