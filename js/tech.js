@@ -7627,7 +7627,7 @@ const tech = {
     },
     {
         name: "infrared diode",
-        description: "<strong>0.4x</strong> <strong class='color-laser'>laser</strong> <strong class='color-f'>energy</strong> cost<br><em>infrared light is outside visual perception</em>",
+        description: "<strong>0x</strong> <strong class='color-laser'>laser</strong> <strong class='color-f'>energy</strong> cost<br><em>infrared light is outside visual perception</em>",
         isGunTech: true,
         maxCount: 1,
         count: 0,
@@ -7638,7 +7638,7 @@ const tech = {
         },
         requires: "laser, not free-electron, pulse",
         effect() {
-            tech.laserDrain *= 0.4; //100%-50%
+            tech.laserDrain *= 0; //100%-50%
             tech.laserColor = "transparent" //"rgb(255,0,20,0.02)"
             // tech.laserColorAlpha = "rgba(255,0,20,0.05)"
         },
