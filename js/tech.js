@@ -3505,7 +3505,7 @@ const tech = {
             return true
         },
         requires: "",
-        rate: 0.06,
+        rate: 2.00,
         effect() {
             tech.interestRate += this.rate;
         },
