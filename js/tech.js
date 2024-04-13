@@ -7512,9 +7512,9 @@ const tech = {
         name: "specular reflection",
         description: "<strong>+2</strong> <strong class='color-laser'>laser</strong> beam reflections",
         isGunTech: true,
-        maxCount: 3,
+        maxCount: Infinity,
         count: 0,
-        frequency: 1,
+        frequency: 3,
         frequencyDefault: 1,
         allowed() {
             return (tech.haveGunCheck("laser") || tech.isLaserMine || tech.isLaserBotUpgrade || tech.isLaserField) && !tech.isWideLaser && !tech.isPulseLaser && !tech.historyLaser
