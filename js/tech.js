@@ -7529,7 +7529,7 @@ const tech = {
     },
     {
         name: "diffraction grating",
-        description: `<strong>+1</strong> diverging <strong class='color-laser'>laser</strong> <strong class='color-g'>gun</strong> beam`,
+        description: `<strong>+4</strong> diverging <strong class='color-laser'>laser</strong> <strong class='color-g'>gun</strong> beam`,
         isGunTech: true,
         maxCount: 9,
         count: 0,
@@ -7540,6 +7540,9 @@ const tech = {
         },
         requires: "laser gun, diffuse beam, or slow light",
         effect() {
+            tech.beamSplitter++
+            tech.beamSplitter++
+            tech.beamSplitter++
             tech.beamSplitter++
             b.guns[11].chooseFireMethod()
         },
