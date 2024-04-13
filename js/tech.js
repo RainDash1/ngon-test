@@ -4480,8 +4480,8 @@ const tech = {
         frequency: 2,
         frequencyDefault: 2,
         // isInstant: true,
-        allowed() {
-        },
+        allowed: () => true,
+        requires: "",
         effect() {
             tech.is100Duplicate = true;
             tech.maxDuplicationEvent()
