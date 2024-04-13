@@ -4481,9 +4481,7 @@ const tech = {
         frequencyDefault: 2,
         // isInstant: true,
         allowed() {
-            return tech.duplicationChance() > 0.5
         },
-        requires: "duplication chance above 50%",
         effect() {
             tech.is100Duplicate = true;
             tech.maxDuplicationEvent()
