@@ -58,6 +58,7 @@ const spawn = {
         if (tech.isDuplicateMobs && Math.random() < tech.duplicationChance()) {
             const pick = spawn.pickList[Math.floor(Math.random() * spawn.pickList.length)];
             spawn[pick](x, y);
+            spawn[pick](x, y);
         }
     },
     randomSmallMob(x, y,
@@ -67,6 +68,7 @@ const spawn = {
         if (spawn.spawnChance(chance)) {
             for (let i = 0; i < num; ++i) {
                 const pick = spawn.pickList[Math.floor(Math.random() * spawn.pickList.length)];
+                spawn[pick](x + Math.round((Math.random() - 0.5) * 20) + i * size * 2.5, y + Math.round((Math.random() - 0.5) * 20), size);
                 spawn[pick](x + Math.round((Math.random() - 0.5) * 20) + i * size * 2.5, y + Math.round((Math.random() - 0.5) * 20), size);
             }
         }
