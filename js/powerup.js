@@ -1450,7 +1450,7 @@ const powerUps = {
             // } else {
             // }
             powerUps.ejectTech(index)
-            m.damage(0.04)
+            this.refundAmount += tech.addJunkTechToPool(0.05)
             document.getElementById(`${index}-pause-tech`).style.textDecoration = "line-through"
             document.getElementById(`${index}-pause-tech`).style.animation = ""
             document.getElementById(`${index}-pause-tech`).onclick = null
