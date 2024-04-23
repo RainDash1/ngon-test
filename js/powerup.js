@@ -451,7 +451,7 @@ const powerUps = {
             if (amount !== 0) powerUps.research.count += amount
             if (tech.isRerollBots && !this.isMakingBots) {
                 let cycle = () => {
-                    const cost = 2 + Math.floor(0.2 * b.totalBots())
+                    const cost = 2
                     if (m.alive && powerUps.research.count >= cost) {
                         requestAnimationFrame(cycle);
                         this.isMakingBots = true
