@@ -4557,7 +4557,15 @@ const tech = {
         },
         isRemoveBenefit: true,
         remove() {
-            tech.giveTech("strange loop")
+            if (this.count > 0 && m.alive) {
+                tech.damage /= this.damage
+                this.frequency = 0
+
+                requestAnimationFrame(() => {
+                    const options = []
+                    for (let i = 0, len = tech.tech.length; i < len; i++)    if (tech.tech[i].isRemoveBenefit && tech.tech[i].count === 0) options.push(i)
+                    const index = options[Math.floor(Math.random() * options.length)]
+                    tech.giveTech(tech.tech[index].name)
                 });
             }
         }
