@@ -9540,7 +9540,7 @@ const tech = {
     // },
     {
         name: "discount",
-        description: "get 3 random <strong class='color-junk'>JUNK</strong><strong class='color-m'>tech</strong> for the price of 1!",
+        description: "get 100 random <strong class='color-junk'>JUNK</strong><strong class='color-m'>tech</strong> for the price of 1!",
         maxCount: 1,
         count: 0,
         frequency: 0,
