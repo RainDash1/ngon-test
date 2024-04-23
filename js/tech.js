@@ -4456,7 +4456,7 @@ const tech = {
     {
         name: "parthenogenesis",
         description: "<strong>+8%</strong> chance to <strong class='color-dup'>duplicate</strong> spawned <strong>power ups</strong><br><strong class='color-dup'>duplication</strong> also <strong class='color-dup'>triplicates</strong> <strong>mobs</strong>",
-        maxCount: 5,
+        maxCount: 9,
         count: 0,
         frequency: 1,
         frequencyDefault: 1,
