@@ -9549,8 +9549,9 @@ const tech = {
         allowed: () => true,
         requires: "",
         effect() {
-            for (int i = 0; i < 1000; i++) {
-                tech.giveRandomJUNK()
+            tech.giveRandomJUNK()
+            tech.giveRandomJUNK()
+            tech.giveRandomJUNK()
 }
         },
         remove() { }
