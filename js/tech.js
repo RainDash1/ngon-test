@@ -11273,6 +11273,10 @@ const tech = {
         requires: "",
         effect() {
             level.difficultyIncrease(simulation.difficultyMode)
+            level.difficultyIncrease(simulation.difficultyMode)
+            level.difficultyIncrease(simulation.difficultyMode)
+            level.difficultyIncrease(simulation.difficultyMode)
+            level.difficultyIncrease(simulation.difficultyMode)
         },
         remove() { }
     },
