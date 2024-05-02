@@ -1342,13 +1342,10 @@ const powerUps = {
             }
             if (tech.isAddRemoveMaxHealth) {
                 powerUps.spawn(x + 20, y, "tech", false)
-                powerUps.spawn(x - 20, y, "research", false)
-                powerUps.spawn(x - 40, y, "research", false)
-                powerUps.spawn(x + 40, y, "research", false)
-                powerUps.spawn(x, y + 20, "research", false)
-                powerUps.spawn(x, y - 20, "heal", false)
-                powerUps.spawn(x, y + 40, "heal", false)
-                powerUps.spawn(x, y - 40, "heal", false)
+                powerUps.spawn(x + 20, y, "tech", false)
+                powerUps.spawn(x + 20, y, "tech", false)
+                powerUps.spawn(x + 20, y, "tech", false)
+                powerUps.spawn(x + 20, y, "tech", false)
             }
             if (tech.isResearchReality) powerUps.spawnDelay("research", 5)
             if (tech.isBanish) powerUps.spawnDelay("research", 2)
