@@ -8577,7 +8577,7 @@ const tech = {
     {
         name: "symbiosis",
         descriptionFunction() {
-            return `after a <strong>boss</strong> <strong>dies</strong> spawn ${powerUps.orb.research(4)}${powerUps.orb.heal(3)} and a <strong class='color-m'>tech</strong><br>after a <strong>mob</strong> <strong>dies</strong> <strong>–0.25</strong> maximum ${tech.isEnergyHealth ? "<strong class='color-f'>energy</strong>" : "<strong class='color-h'>health</strong>"}`
+            return `after a <strong>boss</strong> <strong>dies</strong> spawn 5 <strong class='color-m'>tech</strong><br>after a <strong>mob</strong> <strong>dies</strong> <strong>–0.25</strong> maximum ${tech.isEnergyHealth ? "<strong class='color-f'>energy</strong>" : "<strong class='color-h'>health</strong>"}`
         },
         isFieldTech: true,
         maxCount: 1,
