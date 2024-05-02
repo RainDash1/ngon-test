@@ -9752,19 +9752,16 @@ const tech = {
     },
     {
         name: "catabolysis",
-        description: `set your maximum <strong class='color-h'>health</strong> to <strong>1</strong><br><strong>double</strong> your current <strong class='color-ammo'>ammo</strong> <strong>10</strong> times`,
-        maxCount: 1,
+        description: `your current <strong class='color-ammo'>ammo</strong> <strong>10</strong> times`,
+        maxCount: 5,
         count: 0,
         frequency: 0,
         isInstant: true,
-        isJunk: true,
         allowed() {
-            return !tech.isFallingDamage && !tech.isOverHeal && !tech.isEnergyHealth
+            return true
         },
-        requires: "not quenching, tungsten carbide, mass-energy",
+        requires: ""
         effect() {
-            m.baseHealth = 0.01
-            m.setMaxHealth();
             for (let i = 0; i < b.guns.length; i++) b.guns[i].ammo = b.guns[i].ammo * Math.pow(2, 10)
             simulation.updateGunHUD();
         },
