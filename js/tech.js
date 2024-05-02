@@ -1318,7 +1318,7 @@ const tech = {
     {
         name: "heuristics",
         description: "<strong>1.3x</strong> <em>fire rate</em>",
-        maxCount: 9,
+        maxCount: 100,
         count: 0,
         frequency: 1,
         frequencyDefault: 1,
@@ -9413,24 +9413,23 @@ const tech = {
     },
     {
         name: "reinforcement learning",
-        description: "<strong>100x</strong> current <strong class='color-m'>tech</strong> <em class='flicker'>frequency</em>",
+        description: "<strong>10000x</strong> current <strong class='color-m'>tech</strong> <em class='flicker'>frequency</em>",
         maxCount: 1,
         count: 0,
         frequency: 1,
-        isJunk: true,
         allowed() {
             return tech.totalCount > 9
         },
         requires: "at least 10 tech",
         effect() {
             for (let i = 0, len = tech.tech.length; i < len; i++) {
-                if (tech.tech[i].count > 0) tech.tech[i].frequency *= 100
+                if (tech.tech[i].count > 0) tech.tech[i].frequency *= 10000
             }
         },
         remove() {
             if (this.count) {
                 for (let i = 0, len = tech.tech.length; i < len; i++) {
-                    if (tech.tech[i].count > 0 && tech.tech[i].frequency > 1) tech.tech[i].frequency /= 100
+                    if (tech.tech[i].count > 0 && tech.tech[i].frequency > 1) tech.tech[i].frequency /= 10000
                 }
             }
         }
